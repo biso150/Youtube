@@ -1,0 +1,25 @@
+mixin video(info)
+  a(href=`/videos/${info.id}`).video-mixin
+    div.video-mixin__thumb(style=`background-image: url(${info.thumbUrl}); background-size: cover; background-position: center;`)
+    div.video-mixin__data
+      span.video-mixin__title=info.title
+      div.video-mixin__meta 
+        span #{info.owner.name} • 
+        span #{info.meta.views}회
+
+
+    //- h4
+    //-   a(href=`/videos/${info.id}`)=info.title
+    //- p=info.description
+    //- ul
+    //-   each hashtag in info.hashtags
+    //-     li=hashtag
+    //- small=info.createdAt
+    //- hr 
+
+
+    //- ul
+    //-   li #{info.rating}/5
+    //-   li #{info.comments} comments.
+    //-   li Posted  #{info.createdAt}.
+    //-   li #{info.viwes} views.
