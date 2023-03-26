@@ -6,7 +6,7 @@ import "./models/Comment";
 import app from "./server"
 
 // listening 할 포트(, 콜백 함수 설정)
-const PORT = 4000;
+//const PORT = 4000;
 
 const handleServer = () => console.log(`Server listening on port http://localhost:${PORT}`);
 
